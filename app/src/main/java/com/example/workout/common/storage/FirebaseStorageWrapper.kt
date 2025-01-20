@@ -1,22 +1,27 @@
 package com.example.workout.common.storage
 
 import com.google.firebase.database.DatabaseReference
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.flow
 
+/*
 class FirebaseStorageWrapper(
     private val firebaseDatabase: DatabaseReference
 ) : Storage {
-    override suspend fun <T> getNullableValue(): T? {
-        return null
+    override fun getNullableValue(key: String) = flow {
+        emit(null)
     }
 
-    override suspend fun <T> getValue(default: T): T {
-       return Any() as T
+    override fun getValue(key: String): Flow<String> = flow {
+        emit(value = firebaseDatabase.child(key).get().result.value as String)
     }
 
-    override suspend fun <T> setValue(value: T) {
-        firebaseDatabase.setValue(value)
+    override suspend fun setValue(key: String, value: String) {
+        firebaseDatabase.child(key).setValue(value)
     }
 
+
+    //TODO("")
     /*
     // Read from the database
 myRef.addValueEventListener(object: ValueEventListener {
@@ -35,4 +40,6 @@ myRef.addValueEventListener(object: ValueEventListener {
 })
      */
 }
+
+ */
 

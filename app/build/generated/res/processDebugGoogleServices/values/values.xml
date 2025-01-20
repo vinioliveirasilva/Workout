@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">563948935645</string>
+    <string name="google_api_key" translatable="false">AIzaSyC2YDq7O-xN-P3xLD5yZxbfEXmUuM8bs9E</string>
+    <string name="google_app_id" translatable="false">1:563948935645:android:9731467cb95288c7087e34</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyC2YDq7O-xN-P3xLD5yZxbfEXmUuM8bs9E</string>
+    <string name="google_storage_bucket" translatable="false">workout-d282f.appspot.com</string>
+    <string name="project_id" translatable="false">workout-d282f</string>
+</resources>
